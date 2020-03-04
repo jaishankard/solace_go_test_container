@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  solbroker:
+    volumes:
+      - $PUBSUBPLUS_STORE/var:/usr/sw/var
+      - $PUBSUBPLUS_STORE/adbBackup:/usr/sw/adb
+      - $PUBSUBPLUS_STORE/spool:/usr/sw/internalSpool
+      - $PUBSUBPLUS_STORE/adb:/usr/sw/internalSpool/softAdb
+      - $PUBSUBPLUS_STORE/jail:/usr/sw/jail
+      - $PUBSUBPLUS_STORE/diagnostics:/var/lib/solace/diags
